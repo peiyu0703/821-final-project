@@ -1,40 +1,49 @@
 # 821-final-project
-Task and Project Organizer
+## Task and Project Organizer
 
-## Introduction
+### Introduction
+The Task and Project Organizer is a Python-based command-line application designed to help users efficiently manage their tasks and projects. It is ideally suited for individuals looking to organize their personal or professional tasks, offering a range of functionalities from task creation to organization within projects.
 
-The Task and Project Organizer is a Python-based command-line application designed to help users manage their tasks and projects efficiently. Ideal for individuals looking to keep track of their personal or professional tasks, this tool offers functionalities such as adding, editing, listing, and organizing tasks within projects.
+### Data Model
+The application revolves around two main entities:
+- **Tasks**: Each task has attributes such as an ID, description, due date, status (e.g., pending, completed and overdue), priority (e.g., low, medium and high), recurrence (e.g., daily, weekly, monthly and none).
+- **Projects**: Each project has an ID, a name, and can contain multiple tasks.
 
-## Data Model
-There are two main entities: Tasks and Projects. Each task can belong to a project, and each project can contain multiple tasks.
+### Features
+- **Manage Tasks**: Create, modify, and mark tasks as completed.
+- **Listing**: Tasks can be displayed filtered by project and priority.
+- **Search**: Search for tasks or projects by keywords.
+- **Recurring Tasks**: Set up tasks that recur on a daily, weekly, or monthly basis.
+- **Task History**: View a log of changes made to tasks and projects.
+- **Command-Line Interface (CLI)**: A user-friendly interface for managing tasks and projects directly from the command line.
 
-Task: Attributes include id, title, description, due date, and status (e.g., pending, completed).
+### Installation
+To install the Task and Project Organizer, follow these steps:
+```bash
+git clone https://example.com/821-final-project.git
+cd 821-final-project
+cd src
+```
 
-Project: Attributes include id, name, and a list of tasks.
+### Usage
+To run the Task and Project Organizer:
+```bash
+python app.py
+```
+- **Add tasks**: Users can create tasks, specifying their details.
+- **Add projects**: Users can create projects.
+- **Edit tasks**: Users can modify task details.
+- **List tasks by priority**: Display all tasks in one project ordered by priority.
+- **Mark tasks as completed**: Update the status of tasks.
+- **Delete**: Delete unwanted tasks and projects.
+- **Search**: Search tasks or projects based on keywords.
+- **View history**: View a log of changes made to tasks and projects.
 
-## Features
-Manage Tasks: Create, modify, and mark tasks as completed.
+### Running Tests
+To execute the test suite, follow these steps:
+```bash
+python -m unittest test.py
+```
 
-Project Organization: Assign tasks to projects and view tasks by project.
-
-Flexible Listing: Display tasks filtered by project or status.
-
-CLI Interface: Easy-to-use command-line interface for managing tasks and projects.
-
-## Installation (add example command later)
-
-## Functionality (add example command later)
-Add tasks: Users can create tasks, specifying their details.
-
-Edit tasks: Users can modify task details.
-
-List tasks: Display all tasks or filter them based on criteria (e.g., by project, status).
-
-Mark tasks as completed: Update the status of tasks.
-
-Organize tasks into projects: Assign tasks to projects or move them between projects.
-
-Add/Edit projects: Create or modify projects.
-
-View projects: List all projects and their associated tasks.
-
+### Contributions
+Contributions are welcome! Please fork the repository and submit pull requests with any enhancements, bug fixes, or improvements.
