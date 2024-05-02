@@ -68,7 +68,7 @@ def main() -> None:
                 "Enter task priority (choose from low, medium and high): "
             )
             recurrence = input(
-                "Enter task recurrence (choose from daily, weekly, monthly and none): "
+                "Enter task recurrence (choose from daily, weekly, monthly and none): "  # noqa: E501
             )
             task = Task(
                 task_id,
